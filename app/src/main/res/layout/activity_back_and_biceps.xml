@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/lifting_icon"
+    tools:context="com.example.br161.finalproject.BackAndBicepsActivity">
+
+
+<!-- TextView for the Title of the page -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/Back_and_Bicep_Workout"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="@color/Black"
+         />
+
+<!-- TextView showing what the checkbox does on the right -->
+    <TextView
+        android:id="@+id/tvCBComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentRight="true"/>
+
+<!-- TextView above the Workout column -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tvCBComplete"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentLeft="true"
+        android:text="Workout (3 sets of each)"/>
+
+<!-- TextView for the Overhand Grip Barbell Row Workout -->
+    <TextView
+        android:id="@+id/tvOGBRWorkout"
+        android:paddingTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/FireBrick"
+        android:text="@string/Overhand_Grip_Barbell_Row_Workout"
+        android:lines="1"
+        android:layout_below="@+id/tvCBComplete"/>
+
+<!-- EditText for the weight for a workout -->
+    <EditText
+        android:id="@+id/tvWeight1"
+        android:layout_toLeftOf="@+id/etReps1"
+        android:layout_below="@id/tvCBComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textSize="15dp"
+        android:hint="Weight"
+        android:Color="@color/Black"/>
+<!-- EditText for the reps for a workout -->
+    <EditText
+        android:id="@+id/etReps1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Reps"
+        android:layout_below="@+id/tvCBComplete"
+        android:layout_toLeftOf="@+id/cb1"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/FireBrick"
+        android:textColorHint="@color/FireBrick"/>
+
+<!-- Checkbox indicating that a workout was completed -->
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCBComplete"/>
+
+<!--################## End of Workout 1 ######################-->
+
+
+    <!-- TextView for the Underhand Grip Barbell Row Workout -->
+    <TextView
+        android:id="@+id/tvUGBRWorkout"
+        android:paddingTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/FireBrick"
+        android:text="@string/Underhand_Grip_Barbell_Row_Workout"
+        android:lines="1"
+        android:layout_below="@+id/tvOGBRWorkout"/>
+
+    <!-- Checkbox indicating that a workout was completed -->
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOGBRWorkout"/>
+
+    <!-- EditText for the reps for a workout -->
+    <EditText
+        android:id="@+id/etReps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Reps"
+        android:layout_below="@+id/tvOGBRWorkout"
+        android:layout_toLeftOf="@+id/cb2"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/FireBrick"
+        android:textColorHint="@color/FireBrick"/>
+
+    <!-- EditText for the weight for a workout -->
+    <EditText
+        android:id="@+id/tvWeight2"
+        android:layout_toLeftOf="@+id/etReps2"
+        android:layout_below="@id/tvOGBRWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"
+        android:hint="Weight"
+        android:Color="@color/Black"/>
+
+<!--################## End of Workout 2 ######################-->
+
+
+    <!-- TextView for the Lat Pull Down Wide Grip Workout -->
+    <TextView
+        android:id="@+id/tvLPDWGWorkout"
+        android:paddingTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/FireBrick"
+        android:text="@string/Lat_Pull_Down_Wide_Grip_Workout"
+        android:lines="1"
+        android:layout_below="@+id/tvUGBRWorkout"/>
+
+    <!-- Checkbox indicating that a workout was completed -->
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUGBRWorkout"/>
+
+    <!-- EditText for the reps for a workout -->
+    <EditText
+        android:id="@+id/etReps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Reps"
+        android:layout_below="@+id/tvUGBRWorkout"
+        android:layout_toLeftOf="@+id/cb3"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/FireBrick"
+        android:textColorHint="@color/FireBrick"/>
+
+    <!-- EditText for the weight for a workout -->
+    <EditText
+        android:id="@+id/tvWeight3"
+        android:layout_toLeftOf="@+id/etReps3"
+        android:layout_below="@id/tvUGBRWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"
+        android:hint="Weight"/>
+
+
+<!--################## End of Workout 2 ######################-->
+
+    <!-- TextView for the Bent Over Dumbbell Rows Workout -->
+    <TextView
+        android:id="@+id/tvBODBRWorkout"
+        android:paddingTop="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/FireBrick"
+        android:text="@string/Bent_Over_Dumbbell_Rows_Workout"
+        android:lines="1"
+        android:layout_below="@+id/tvLPDWGWorkout"/>
+
+    <!-- Checkbox indicating that a workout was completed -->
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLPDWGWorkout"/>
+
+    <!-- EditText for the reps for a workout -->
+    <EditText
+        android:id="@+id/etReps4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Reps"
+        android:layout_below="@+id/tvLPDWGWorkout"
+        android:layout_toLeftOf="@+id/cb4"
+        android:textSize="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/FireBrick"
+        android:textColorHint="@color/FireBrick"/>
+
+    <!-- EditText for the weight for a workout -->
+    <EditText
+        android:id="@+id/tvWeight4"
+        android:layout_toLeftOf="@+id/etReps4"
+        android:layout_below="@id/tvLPDWGWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"
+        android:hint="Weight"/>
+</RelativeLayout>

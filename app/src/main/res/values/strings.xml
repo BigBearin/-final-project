@@ -4,5 +4,13 @@
     <string name="app_name">FinalProject</string>
     <string name="action_settings">Settings</string>
     <string name="splash_screen_string">From Beginner To Expert</string>
+    <string name="title_activity_back_and_biceps">BackAndBicepsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="Back_and_Bicep_Workout">Back and Biceps</string>
+    <string name="Overhand_Grip_Barbell_Row_Workout">Overhand Grip Barbell Row</string>
+    <string name="Underhand_Grip_Barbell_Row_Workout">Underhand Grip Barbell Row</string>
+    <string name="Lat_Pull_Down_Wide_Grip_Workout">Lat Pull Down Wide Grip</string>
+    <string name="Bent_Over_Dumbbell_Rows_Workout">Bent Over Dumbbell Rows</string>
 
 </resources>
