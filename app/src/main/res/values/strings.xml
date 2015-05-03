@@ -12,5 +12,19 @@
     <string name="Underhand_Grip_Barbell_Row_Workout">Underhand Grip Barbell Row</string>
     <string name="Lat_Pull_Down_Wide_Grip_Workout">Lat Pull Down Wide Grip</string>
     <string name="Bent_Over_Dumbbell_Rows_Workout">Bent Over Dumbbell Rows</string>
+    <string name="Concentration_Curls_Workout">Concentration Curls</string>
+    <string name="Standing_Dumbbell_Curls_Workout">Standing Dumbbell Curls</string>
+    <string name="Barbell_Curls_Workout">Barbell Curls</string>
+    <string name="title_activity_chest_and_triceps">ChestAndTricepsActivity</string>
+    <string name="Chest_and_Tricep_Workout">Chest and Triceps</string>
+    <string name="Bench_Press_Workout">Bench Press</string>
+    <string name="Lying_Arm_Tricep_Ext_Workout">Lying Arm Tricep Ext.</string>
+    <string name="Decline_Press_Workout">Decline Press</string>
+    <string name="Behind_the_Head_Tricep_Ext_Workout">Behind the Head Tricep Ext.</string>
+    <string name="Incline_Press_Workout">Incline Press</string>
+    <string name="Bent_Over_Tricep_Ext_Workout">Bent Over Tricep Ext.</string>
+    <string name="Dumbbell_Flys_Workout">Dumbbell Flys</string>
+    <string name="Preacher_Barbell_Curls_Workout">Preacher Barbell Curls</string>
+    <string name="Skull_Crushers_Workout">Skull Crushers</string>
 
 </resources>
