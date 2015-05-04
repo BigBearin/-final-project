@@ -26,5 +26,10 @@
     <string name="Dumbbell_Flys_Workout">Dumbbell Flys</string>
     <string name="Preacher_Barbell_Curls_Workout">Preacher Barbell Curls</string>
     <string name="Skull_Crushers_Workout">Skull Crushers</string>
+    <string name="title_activity_legs_and_triceps">LegsAndTriceps</string>
+    <string name="Weight_Hint">Weight</string>
+    <string name="Reps_Hint">Reps</string>
+    <string name="Workout_Name_Title">Workout (3 sets of each)</string>
+    <string name="Checkbox_Title">Complete</string>
 
 </resources>

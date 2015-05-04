@@ -24,19 +24,20 @@
         android:id="@+id/tvCBComplete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Complete"
+        android:text="@string/Checkbox_Title"
         android:textColor="@color/Black"
         android:layout_below="@+id/tvTitle"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
     <!-- TextView above the Workout column -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/tvCBComplete"
         android:layout_below="@+id/tvTitle"
         android:layout_alignParentLeft="true"
-        android:text="Workout (3 sets of each)"
+        android:layout_alignParentStart="true"
+        android:text="@string/Workout_Name_Title"
         android:textColor="@color/Black"/>
 
     <!-- End of the Title portion of the XML -->
@@ -47,6 +48,7 @@
         android:id="@+id/tvBPWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,24 +62,29 @@
     <EditText
         android:id="@+id/tvWeight1"
         android:layout_toLeftOf="@+id/etReps1"
+        android:layout_toStartOf="@+id/etReps1"
         android:layout_below="@id/tvCBComplete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"
-        android:Color="@color/Black"/>
+        android:textColor="@color/Black"/>
+
     <!-- EditText for the reps for a workout -->
     <EditText
         android:id="@+id/etReps1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvCBComplete"
         android:layout_toLeftOf="@+id/cb1"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb1"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
 
@@ -85,6 +92,7 @@
     <CheckBox
         android:id="@+id/cb1"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvCBComplete"/>
@@ -97,6 +105,7 @@
         android:id="@+id/tvLATXWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -110,24 +119,29 @@
     <EditText
         android:id="@+id/tvWeight2"
         android:layout_toLeftOf="@+id/etReps2"
+        android:layout_toStartOf="@+id/etReps2"
         android:layout_below="@id/tvBPWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"
-        android:Color="@color/Black"/>
+        android:textColor="@color/Black"/>
     <!-- EditText for the reps for a workout -->
+
     <EditText
         android:id="@+id/etReps2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvBPWorkout"
         android:layout_toLeftOf="@+id/cb2"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb2"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
 
@@ -136,6 +150,7 @@
     <CheckBox
         android:id="@+id/cb2"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBPWorkout"/>
@@ -149,6 +164,7 @@
         android:id="@+id/tvDPWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -163,6 +179,7 @@
     <CheckBox
         android:id="@+id/cb3"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvLATXWorkout"/>
@@ -173,11 +190,13 @@
         android:id="@+id/etReps3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvLATXWorkout"
         android:layout_toLeftOf="@+id/cb3"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb3"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -187,15 +206,17 @@
     <EditText
         android:id="@+id/tvWeight3"
         android:layout_toLeftOf="@+id/etReps3"
+        android:layout_toStartOf="@+id/etReps3"
         android:layout_below="@id/tvLATXWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"
-        android:Color="@color/Black"/>
+        android:textColor="@color/Black"/>
 
     <!--################## End of Workout 3 ######################-->
 
@@ -206,6 +227,7 @@
         android:id="@+id/tvBTHTXWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -220,6 +242,7 @@
     <CheckBox
         android:id="@+id/cb4"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvDPWorkout"/>
@@ -230,11 +253,13 @@
         android:id="@+id/etReps4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvDPWorkout"
         android:layout_toLeftOf="@+id/cb4"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb4"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -244,13 +269,15 @@
     <EditText
         android:id="@+id/tvWeight4"
         android:layout_toLeftOf="@+id/etReps4"
+        android:layout_toStartOf="@+id/etReps4"
         android:layout_below="@id/tvDPWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
 
     <!--################## End of Workout 4 ######################-->
@@ -262,6 +289,7 @@
         android:id="@+id/tvIPWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -276,6 +304,7 @@
     <CheckBox
         android:id="@+id/cb5"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBTHTXWorkout"/>
@@ -286,11 +315,13 @@
         android:id="@+id/etReps5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvBTHTXWorkout"
         android:layout_toLeftOf="@+id/cb5"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb5"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -300,13 +331,15 @@
     <EditText
         android:id="@+id/tvWeight5"
         android:layout_toLeftOf="@+id/etReps5"
+        android:layout_toStartOf="@+id/etReps5"
         android:layout_below="@id/tvBTHTXWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
 
     <!--################## End of Workout 5 ######################-->
@@ -318,6 +351,7 @@
         android:id="@+id/tvBOTXWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -332,6 +366,7 @@
     <CheckBox
         android:id="@+id/cb6"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvIPWorkout"/>
@@ -342,11 +377,13 @@
         android:id="@+id/etReps6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvIPWorkout"
         android:layout_toLeftOf="@+id/cb6"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb6"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -356,13 +393,15 @@
     <EditText
         android:id="@+id/tvWeight6"
         android:layout_toLeftOf="@+id/etReps6"
+        android:layout_toStartOf="@+id/etReps6"
         android:layout_below="@id/tvIPWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
 
     <!--################## End of Workout 6 ######################-->
@@ -374,6 +413,7 @@
         android:id="@+id/tvDFWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -388,6 +428,7 @@
     <CheckBox
         android:id="@+id/cb7"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvBOTXWorkout"/>
@@ -398,11 +439,13 @@
         android:id="@+id/etReps7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvBOTXWorkout"
         android:layout_toLeftOf="@+id/cb7"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb7"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -412,13 +455,15 @@
     <EditText
         android:id="@+id/tvWeight7"
         android:layout_toLeftOf="@+id/etReps7"
+        android:layout_toStartOf="@+id/etReps7"
         android:layout_below="@id/tvBOTXWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
 
     <!--################## End of Workout 7 ######################-->
@@ -429,6 +474,7 @@
         android:id="@+id/tvSCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -443,6 +489,7 @@
     <CheckBox
         android:id="@+id/cb8"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvDFWorkout"/>
@@ -453,11 +500,13 @@
         android:id="@+id/etReps8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Reps"
+        android:hint="@string/Reps_Hint"
         android:layout_below="@+id/tvDFWorkout"
         android:layout_toLeftOf="@+id/cb8"
-        android:textSize="15dp"
+        android:layout_toStartOf="@+id/cb8"
+        android:textSize="15sp"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:textColor="@color/FireBrick"
         android:textColorHint="@color/FireBrick"/>
@@ -467,13 +516,15 @@
     <EditText
         android:id="@+id/tvWeight8"
         android:layout_toLeftOf="@+id/etReps8"
+        android:layout_toStartOf="@+id/etReps8"
         android:layout_below="@id/tvDFWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
-        android:textSize="15dp"
-        android:hint="Weight"
+        android:textSize="15sp"
+        android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
 
 </RelativeLayout>
