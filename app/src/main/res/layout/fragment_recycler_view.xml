@@ -3,4 +3,4 @@
     android:id="@+id/recycler_workouts"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.maddux.assignmentthree.RecyclerViewFragment" />
+    tools:context="com.example.br161.finalproject.RecyclerViewFragment" />

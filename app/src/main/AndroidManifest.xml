@@ -32,6 +32,10 @@
             android:name=".Traps_and_Biceps"
             android:label="@string/title_activity_traps_and__biceps" >
         </activity>
+        <activity
+            android:name=".RecyclerMain"
+            android:label="RecyclerMain" >
+        </activity>
 
     </application>
 

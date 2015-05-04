@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
                 /* Make a new activity to go to after this is done ---------*/
-                Intent mainIntent = new Intent(MainActivity.this,RecyclerViewFragment.class);
+                Intent mainIntent = new Intent(MainActivity.this,RecyclerMain.class);
                 MainActivity.this.startActivity(mainIntent);
                 MainActivity.this.finish();
             }
