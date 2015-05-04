@@ -1,14 +1,9 @@
 package com.example.br161.finalproject;
-import android.content.Intent;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import java.util.List;
 
 
@@ -21,7 +16,7 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate((R.layout.workout_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.workout_item, parent, false);
 
         final ViewHolder viewHolder = new ViewHolder(view, new ViewHolder.ItemClickListener() {
             @Override
@@ -49,7 +44,7 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.ViewHold
 
         @Override
         public void onClick(View view) {
-            listener.onItemClick(view, getAdapterPosition());
+            listener.onItemClick(view, getPosition());
         }
 
         public interface ItemClickListener {

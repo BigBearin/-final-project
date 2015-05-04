@@ -3,8 +3,7 @@ package com.example.br161.finalproject;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import java.util.logging.Handler;
+import android.os.Handler;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
                 /* Make a new activity to go to after this is done ---------*/
-                Intent mainIntent = new Intent(MainActivity.this,Menu.class);
+                Intent mainIntent = new Intent(MainActivity.this,RecyclerViewFragment.class);
                 MainActivity.this.startActivity(mainIntent);
                 MainActivity.this.finish();
             }
