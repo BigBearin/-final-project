@@ -28,6 +28,10 @@
             android:name=".LegsAndTriceps"
             android:label="@string/title_activity_legs_and_triceps" >
         </activity>
+        <activity
+            android:name=".Traps_and_Biceps"
+            android:label="@string/title_activity_traps_and__biceps" >
+        </activity>
     </application>
 
 </manifest>

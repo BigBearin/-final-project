@@ -7,7 +7,7 @@
     <string name="title_activity_back_and_biceps">BackAndBicepsActivity</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="Back_and_Bicep_Workout">Back and Biceps</string>
+    <string name="Back_and_Bicep_Title">Back and Biceps</string>
     <string name="Overhand_Grip_Barbell_Row_Workout">Overhand Grip Barbell Row</string>
     <string name="Underhand_Grip_Barbell_Row_Workout">Underhand Grip Barbell Row</string>
     <string name="Lat_Pull_Down_Wide_Grip_Workout">Lat Pull Down Wide Grip</string>
@@ -16,7 +16,7 @@
     <string name="Standing_Dumbbell_Curls_Workout">Standing Dumbbell Curls</string>
     <string name="Barbell_Curls_Workout">Barbell Curls</string>
     <string name="title_activity_chest_and_triceps">ChestAndTricepsActivity</string>
-    <string name="Chest_and_Tricep_Workout">Chest and Triceps</string>
+    <string name="Chest_and_Tricep_Title">Chest and Triceps</string>
     <string name="Bench_Press_Workout">Bench Press</string>
     <string name="Lying_Arm_Tricep_Ext_Workout">Lying Arm Tricep Ext.</string>
     <string name="Decline_Press_Workout">Decline Press</string>
@@ -31,5 +31,20 @@
     <string name="Reps_Hint">Reps</string>
     <string name="Workout_Name_Title">Workout (3 sets of each)</string>
     <string name="Checkbox_Title">Complete</string>
+    <string name="Legs_and_Triceps_Title">Legs and Triceps</string>
+    <string name="Back_Squats_Workout">Back Squats</string>
+    <string name="Overhead_Dumbbell_Tricep_Ext_Workout">Overhead Dumbbell Tricep Ext.</string>
+    <string name="Leg_Extensions_Workout">Leg Extensions</string>
+    <string name="Leg_Presses_Workout">Leg Presses</string>
+    <string name="Leg_Curls_Workout">Leg Curls</string>
+    <string name="title_activity_traps_and__biceps">Traps_and_Biceps</string>
+    <string name="Front_Squats_Workout">Front Squats</string>
+    <string name="Traps_and_Biceps_Title">Traps and Biceps</string>
+    <string name="Dead_Lifts_Workout">Dead Lifts</string>
+    <string name="Hang_Cleans_Workout">Hang Cleans</string>
+    <string name="Barbell_Shrugs_Workout">Barbell Shrugs</string>
+    <string name="Cable_Upright_Rows_Workout">Cable Upright Rows</string>
+    <string name="Cable_Curls_Workout">Cable Curls</string>
+
 
 </resources>

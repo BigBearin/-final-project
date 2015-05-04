@@ -15,7 +15,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="@string/Back_and_Bicep_Workout"
+        android:text="@string/Back_and_Bicep_Title"
         android:gravity="center_horizontal"
         android:textSize="30sp"
         android:textColor="@color/Black"/>
@@ -527,4 +527,6 @@
         android:textSize="15sp"
         android:hint="@string/Weight_Hint"
         android:textColorHint="@color/Black"/>
+
+    <!--################## End of Workout 8 ######################-->
 </RelativeLayout>

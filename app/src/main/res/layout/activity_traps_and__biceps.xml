@@ -14,7 +14,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="@string/Legs_and_Triceps_Title"
+        android:text="@string/Traps_and_Biceps_Title"
         android:gravity="center_horizontal"
         android:textSize="30sp"
         android:textColor="@color/Black"/>
@@ -43,9 +43,9 @@
     <!-- End of the Title portion of the XML -->
 
 
-    <!-- TextView for the Back Squats Workout -->
+    <!-- TextView for the Dead Lifts Workout -->
     <TextView
-        android:id="@+id/tvBSWorkout"
+        android:id="@+id/tvDLWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Back_Squats_Workout"
+        android:text="@string/Dead_Lifts_Workout"
         android:lines="1"
         android:layout_below="@+id/tvCBComplete"/>
 
@@ -100,9 +100,9 @@
     <!--################## End of Workout 1 ######################-->
 
 
-    <!-- TextView for the Overhead Dumbbell Tricep Ext. Workout -->
+    <!-- TextView for the Standing Dumbbell Curls Workout -->
     <TextView
-        android:id="@+id/tvODTXWorkout"
+        android:id="@+id/tvSDCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -111,16 +111,16 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Overhead_Dumbbell_Tricep_Ext_Workout"
+        android:text="@string/Standing_Dumbbell_Curls_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvBSWorkout"/>
+        android:layout_below="@+id/tvDLWorkout"/>
 
     <!-- EditText for the weight for a workout -->
     <EditText
         android:id="@+id/tvWeight2"
         android:layout_toLeftOf="@+id/etReps2"
         android:layout_toStartOf="@+id/etReps2"
-        android:layout_below="@id/tvBSWorkout"
+        android:layout_below="@id/tvDLWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -136,7 +136,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvBSWorkout"
+        android:layout_below="@+id/tvDLWorkout"
         android:layout_toLeftOf="@+id/cb2"
         android:layout_toStartOf="@+id/cb2"
         android:textSize="15sp"
@@ -153,15 +153,15 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvBSWorkout"/>
+        android:layout_below="@+id/tvDLWorkout"/>
 
     <!--################## End of Workout 2 ######################-->
 
 
-    <!-- TextView for the Front Squats Workout -->
+    <!-- TextView for the Hang Cleans Workout -->
 
     <TextView
-        android:id="@+id/tvFSWorkout"
+        android:id="@+id/tvHCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -170,9 +170,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Front_Squats_Workout"
+        android:text="@string/Hang_Cleans_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvODTXWorkout"/>
+        android:layout_below="@+id/tvSDCWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -182,7 +182,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvODTXWorkout"/>
+        android:layout_below="@+id/tvSDCWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -191,7 +191,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvODTXWorkout"
+        android:layout_below="@+id/tvSDCWorkout"
         android:layout_toLeftOf="@+id/cb3"
         android:layout_toStartOf="@+id/cb3"
         android:textSize="15sp"
@@ -207,7 +207,7 @@
         android:id="@+id/tvWeight3"
         android:layout_toLeftOf="@+id/etReps3"
         android:layout_toStartOf="@+id/etReps3"
-        android:layout_below="@id/tvODTXWorkout"
+        android:layout_below="@id/tvSDCWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -221,10 +221,10 @@
     <!--################## End of Workout 3 ######################-->
 
 
-    <!-- TextView for the Behind the Head Tricep Ext. Workout -->
+    <!-- TextView for the Concentration Curls Workout -->
 
     <TextView
-        android:id="@+id/tvBTHTXWorkout"
+        android:id="@+id/tvCCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -233,9 +233,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Behind_the_Head_Tricep_Ext_Workout"
+        android:text="@string/Concentration_Curls_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvFSWorkout"/>
+        android:layout_below="@+id/tvHCWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -245,7 +245,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvFSWorkout"/>
+        android:layout_below="@+id/tvHCWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -254,7 +254,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvFSWorkout"
+        android:layout_below="@+id/tvHCWorkout"
         android:layout_toLeftOf="@+id/cb4"
         android:layout_toStartOf="@+id/cb4"
         android:textSize="15sp"
@@ -270,7 +270,7 @@
         android:id="@+id/tvWeight4"
         android:layout_toLeftOf="@+id/etReps4"
         android:layout_toStartOf="@+id/etReps4"
-        android:layout_below="@id/tvFSWorkout"
+        android:layout_below="@id/tvHCWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -283,10 +283,10 @@
     <!--################## End of Workout 4 ######################-->
 
 
-    <!-- TextView for the Leg Extensions Workout -->
+    <!-- TextView for the Barbell Shrugs Workout -->
 
     <TextView
-        android:id="@+id/tvLEWorkout"
+        android:id="@+id/tvBBSWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -295,9 +295,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Leg_Extensions_Workout"
+        android:text="@string/Barbell_Shrugs_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvBTHTXWorkout"/>
+        android:layout_below="@+id/tvCCWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -307,7 +307,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvBTHTXWorkout"/>
+        android:layout_below="@+id/tvCCWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -316,7 +316,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvBTHTXWorkout"
+        android:layout_below="@+id/tvCCWorkout"
         android:layout_toLeftOf="@+id/cb5"
         android:layout_toStartOf="@+id/cb5"
         android:textSize="15sp"
@@ -332,7 +332,7 @@
         android:id="@+id/tvWeight5"
         android:layout_toLeftOf="@+id/etReps5"
         android:layout_toStartOf="@+id/etReps5"
-        android:layout_below="@id/tvBTHTXWorkout"
+        android:layout_below="@id/tvCCWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -345,10 +345,10 @@
     <!--################## End of Workout 5 ######################-->
 
 
-    <!-- TextView for the Bent Over Tricep Ext. Workout -->
+    <!-- TextView for the Barbell Curls Workout -->
 
     <TextView
-        android:id="@+id/tvBOTXWorkout"
+        android:id="@+id/tvBCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -357,9 +357,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Bent_Over_Tricep_Ext_Workout"
+        android:text="@string/Barbell_Curls_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvLEWorkout"/>
+        android:layout_below="@+id/tvBBSWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -369,7 +369,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLEWorkout"/>
+        android:layout_below="@+id/tvBBSWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -378,7 +378,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvLEWorkout"
+        android:layout_below="@+id/tvBBSWorkout"
         android:layout_toLeftOf="@+id/cb6"
         android:layout_toStartOf="@+id/cb6"
         android:textSize="15sp"
@@ -394,7 +394,7 @@
         android:id="@+id/tvWeight6"
         android:layout_toLeftOf="@+id/etReps6"
         android:layout_toStartOf="@+id/etReps6"
-        android:layout_below="@id/tvLEWorkout"
+        android:layout_below="@id/tvBBSWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -407,10 +407,10 @@
     <!--################## End of Workout 6 ######################-->
 
 
-    <!-- TextView for the Leg Presses Workout -->
+    <!-- TextView for the Cable Upright Rows Workout -->
 
     <TextView
-        android:id="@+id/tvLPWorkout"
+        android:id="@+id/tvCURWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -419,9 +419,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Leg_Presses_Workout"
+        android:text="@string/Cable_Upright_Rows_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvBOTXWorkout"/>
+        android:layout_below="@+id/tvBCWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -431,7 +431,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvBOTXWorkout"/>
+        android:layout_below="@+id/tvBCWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -440,7 +440,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvBOTXWorkout"
+        android:layout_below="@+id/tvBCWorkout"
         android:layout_toLeftOf="@+id/cb7"
         android:layout_toStartOf="@+id/cb7"
         android:textSize="15sp"
@@ -456,7 +456,7 @@
         android:id="@+id/tvWeight7"
         android:layout_toLeftOf="@+id/etReps7"
         android:layout_toStartOf="@+id/etReps7"
-        android:layout_below="@id/tvBOTXWorkout"
+        android:layout_below="@id/tvBCWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -469,9 +469,9 @@
     <!--################## End of Workout 7 ######################-->
 
 
-    <!-- TextView for the Lying Arm Tricep Ext. Workout -->
+    <!-- TextView for the Cable Curls Workout -->
     <TextView
-        android:id="@+id/tvLATXWorkout"
+        android:id="@+id/tvCableCWorkout"
         android:paddingTop="4dp"
         android:layout_marginRight="10dp"
         android:layout_marginEnd="10dp"
@@ -480,9 +480,9 @@
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/FireBrick"
-        android:text="@string/Lying_Arm_Tricep_Ext_Workout"
+        android:text="@string/Cable_Curls_Workout"
         android:lines="1"
-        android:layout_below="@+id/tvLPWorkout"/>
+        android:layout_below="@+id/tvCURWorkout"/>
 
     <!-- Checkbox indicating that a workout was completed -->
 
@@ -492,7 +492,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLPWorkout"/>
+        android:layout_below="@+id/tvCURWorkout"/>
 
     <!-- EditText for the reps for a workout -->
 
@@ -501,7 +501,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvLPWorkout"
+        android:layout_below="@+id/tvCURWorkout"
         android:layout_toLeftOf="@+id/cb8"
         android:layout_toStartOf="@+id/cb8"
         android:textSize="15sp"
@@ -517,7 +517,7 @@
         android:id="@+id/tvWeight8"
         android:layout_toLeftOf="@+id/etReps8"
         android:layout_toStartOf="@+id/etReps8"
-        android:layout_below="@id/tvLPWorkout"
+        android:layout_below="@id/tvCURWorkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
@@ -528,66 +528,5 @@
         android:textColorHint="@color/Black"/>
 
     <!--################## End of Workout 8 ######################-->
-
-
-    <!-- TextView for the Leg Curls Workout -->
-    <TextView
-        android:id="@+id/tvLCWorkout"
-        android:paddingTop="4dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/FireBrick"
-        android:text="@string/Leg_Curls_Workout"
-        android:lines="1"
-        android:layout_below="@+id/tvLATXWorkout"/>
-
-    <!-- Checkbox indicating that a workout was completed -->
-
-    <CheckBox
-        android:id="@+id/cb9"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvLATXWorkout"/>
-
-    <!-- EditText for the reps for a workout -->
-
-    <EditText
-        android:id="@+id/etReps9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/Reps_Hint"
-        android:layout_below="@+id/tvLATXWorkout"
-        android:layout_toLeftOf="@+id/cb9"
-        android:layout_toStartOf="@+id/cb9"
-        android:textSize="15sp"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="30dp"
-        android:textColor="@color/FireBrick"
-        android:textColorHint="@color/FireBrick"/>
-
-    <!-- EditText for the weight for a workout -->
-
-    <EditText
-        android:id="@+id/tvWeight9"
-        android:layout_toLeftOf="@+id/etReps9"
-        android:layout_toStartOf="@+id/etReps9"
-        android:layout_below="@id/tvLATXWorkout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="30dp"
-        android:textSize="15sp"
-        android:hint="@string/Weight_Hint"
-        android:textColorHint="@color/Black"/>
-
-    <!--################## End of Workout 9 ######################-->
 
 </RelativeLayout>
