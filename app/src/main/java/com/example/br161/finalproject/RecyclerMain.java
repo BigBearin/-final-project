@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 
-/**
- * Created by My Laptop on 5/4/2015.
- */
 public class RecyclerMain extends Activity {
 
     @Override

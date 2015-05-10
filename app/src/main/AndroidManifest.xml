@@ -36,6 +36,10 @@
             android:name=".RecyclerMain"
             android:label="RecyclerMain" >
         </activity>
+        <activity
+            android:name=".addWorkoutActivity"
+            android:label="addWorkoutActivity" >
+        </activity>
 
     </application>
 

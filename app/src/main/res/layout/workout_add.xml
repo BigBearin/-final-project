@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ff676c66"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_button"
+        android:background="#ffcc251d"
+        android:text="Add New Workout"
+        android:textColor="#fffaffff"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "
+        android:id="@+id/date_title"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_date"
+        android:layout_above="@+id/time_title"
+        android:layout_toRightOf="@+id/date_title"
+        android:layout_toEndOf="@+id/date_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: "
+        android:id="@+id/time_title"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/date_title"
+        android:layout_alignRight="@+id/date_title"
+        android:layout_alignEnd="@+id/date_title" />
+
+    <RadioGroup
+        android:id="@+id/title_group"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/time_title"
+        android:layout_height="200dp"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Arm Day"
+            android:id="@+id/light_arm"
+            android:layout_gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arm Day"
+            android:id="@+id/arm"
+            android:layout_gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Leg Day"
+            android:id="@+id/light_leg"
+            android:layout_gravity="center" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leg Day"
+            android:id="@+id/leg"
+            android:layout_gravity="center" />
+    </RadioGroup>
+
+</RelativeLayout>

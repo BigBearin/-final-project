@@ -2,14 +2,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <TextView
         android:id="@+id/button"
         android:background="#ffcc251d"
         android:text="Add New Workout"
         android:textColor="#fffaffff"
+        android:gravity="center"
+        android:textSize="24sp"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="48dp" />
 
     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
