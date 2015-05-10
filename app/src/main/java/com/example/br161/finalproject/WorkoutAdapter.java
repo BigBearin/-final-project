@@ -4,6 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import java.util.List;
 
 
@@ -28,6 +30,9 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        holder.title.setText(workouts.get(position).getTitle());
+        holder.date.setText(workouts.get(position).getDate());
+        holder.time.setText(workouts.get(position).getTime());
     }
 
     @Override
@@ -37,9 +42,17 @@ public class WorkoutAdapter extends RecyclerView.Adapter<WorkoutAdapter.ViewHold
 
         ItemClickListener listener;
 
+        TextView title;
+        TextView date;
+        TextView time;
+
 
         public ViewHolder(View itemView, ItemClickListener listener) {
             super(itemView);
+            this.listener = listener;
+            title = (TextView) itemView.findViewById(R.id.title);
+            date = (TextView) itemView.findViewById(R.id.date);
+            time = (TextView) itemView.findViewById(R.id.time);
         }
 
         @Override

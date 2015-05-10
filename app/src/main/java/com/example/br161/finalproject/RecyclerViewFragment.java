@@ -47,6 +47,7 @@ public class RecyclerViewFragment extends Fragment {
 
     private List<Workout> mockWorkouts() {
         List<Workout> workouts = new ArrayList<>();
+        workouts.add(new Workout("title", "02/20/1992", "12:00"));
         return workouts;
     }
 }
